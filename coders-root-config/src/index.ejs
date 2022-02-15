@@ -37,11 +37,7 @@
     <script type="systemjs-importmap">
       {
         "imports": {
-          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
-          "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
-          "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js",
-          "zustand": "https://unpkg.com/zustand@3.6.9/system/index.js",
-          "zustand/middleware": "https://unpkg.com/zustand@3.6.9/system/middleware.js"
+          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
         }
       }
     </script>
@@ -75,12 +71,7 @@
       {
         "imports": {
           "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-          "@coders/root-config": "//localhost:9000/coders-root-config.js",
-          "@coders/app1": "//localhost:8100/coders-app1.js",
-          "@coders/app2": "//localhost:8200/coders-app2.js",
-          "@coders/loading": "//localhost:5000/coders-loading.js",
-          "@coders/utility": "//localhost:5100/coders-utility.js",
-          "@coders/header": "//localhost:8000/coders-header.js"
+          "@coders/root-config": "//localhost:9000/coders-root-config.js"
         }
       }
     </script>
@@ -105,7 +96,6 @@
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <script>
       System.import("@coders/root-config");
-      System.import("@coders/utility");
     </script>
     <import-map-overrides-full
       show-when-local-storage="devtools"
