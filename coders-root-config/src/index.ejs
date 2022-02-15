@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Root Config</title>
+    <title>Workshop Coders Club</title>
 
     <!--
     Remove this if you only support browsers that support async/await.
@@ -51,6 +51,22 @@
       as="script"
     />
 
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        height: 100vh;
+        background-color: #333;
+        color: #eee;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        border: 5px solid green;
+      }
+    </style>
+
     <!-- Add your organization's prod import map URL to this script's src  -->
     <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
@@ -63,7 +79,8 @@
           "@coders/app1": "//localhost:8100/coders-app1.js",
           "@coders/app2": "//localhost:8200/coders-app2.js",
           "@coders/loading": "//localhost:5000/coders-loading.js",
-          "@coders/utility": "//localhost:5100/coders-utility.js"
+          "@coders/utility": "//localhost:5100/coders-utility.js",
+          "@coders/header": "//localhost:8000/coders-header.js"
         }
       }
     </script>

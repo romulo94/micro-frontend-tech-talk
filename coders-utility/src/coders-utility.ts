@@ -15,9 +15,15 @@ const store = combine<StoreProperties, StoreMethods>(
   },
   (set) => ({
     toggle() {
-      set((state) => ({
-        loading: !state.loading,
-      }));
+      set((state) => {
+        localStorage.setItem(
+          "@coders/global",
+          JSON.stringify({ loading: !state.loading })
+        );
+        return {
+          loading: !state.loading,
+        };
+      });
     },
   })
 );
